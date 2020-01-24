@@ -4,6 +4,10 @@
 # Build system
 BUILD_BROKEN_DUP_RULES := true
 
+# Charger
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/charger,$(TARGET_COPY_OUT_PRODUCT)/etc/res)
+
 # START PREBUILT APK #
 
 # CameraGO
