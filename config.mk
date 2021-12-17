@@ -51,3 +51,7 @@ PRODUCT_PACKAGES += \
 endif
 
 # END PREBUILT APK #
+
+# Google Photos
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/etc/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
