@@ -55,3 +55,7 @@ endif
 # Google Photos
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/etc/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
+
+# OneHandedMode
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.support_one_handed_mode=true
