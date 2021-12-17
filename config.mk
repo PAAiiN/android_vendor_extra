@@ -59,3 +59,7 @@ PRODUCT_COPY_FILES += \
 # OneHandedMode
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.support_one_handed_mode=true
+
+# Privapp permissions whitelisting
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.control_privapp_permissions=log
