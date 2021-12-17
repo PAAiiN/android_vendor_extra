@@ -67,3 +67,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # SIM
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.sys.fflag.override.settings_provider_model=false
+
+# System
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.binary_xml=false
