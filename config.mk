@@ -63,3 +63,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Privapp permissions whitelisting
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=log
+
+# SIM
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.sys.fflag.override.settings_provider_model=false
