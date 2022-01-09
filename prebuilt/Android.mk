@@ -69,7 +69,7 @@ LOCAL_PRODUCT_MODULE := true
 include $(BUILD_PREBUILT)
 
 # XRecorder
-# versionCode: 212101 && versionName: 2.1.2.1
+# versionCode: 220102 && versionName: 2.2.0.1
 include $(CLEAR_VARS)
 LOCAL_MODULE := XRecorder
 LOCAL_SRC_FILES := apk/$(LOCAL_MODULE)/$(LOCAL_MODULE).apk
