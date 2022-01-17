@@ -5,8 +5,10 @@
 BUILD_BROKEN_DUP_RULES := true
 
 # Charger
+ifeq ($(WITH_PIXEL_CHARGER),true)
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/charger,$(TARGET_COPY_OUT_PRODUCT)/etc/res)
+endif
 
 # START PREBUILT APK #
 
