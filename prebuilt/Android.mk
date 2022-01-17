@@ -30,7 +30,7 @@ LOCAL_OVERRIDES_PACKAGES := SnapdragonCamera Snap Camera2
 include $(BUILD_PREBUILT)
 
 # GrapheneOSCamera
-# versionCode: 8 && versionName: 8
+# versionCode: 9 && versionName: 9
 include $(CLEAR_VARS)
 LOCAL_MODULE := GrapheneOSCamera
 LOCAL_SRC_FILES := apk/$(LOCAL_MODULE)/$(LOCAL_MODULE).apk
