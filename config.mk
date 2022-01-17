@@ -10,6 +10,15 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/charger,$(TARGET_COPY_OUT_PRODUCT)/etc/res)
 endif
 
+# Safetynet Hax
+ifeq ($(WITH_SAFETYNET_HAX),true)
+PRODUCT_PACKAGES += \
+    ih8sn
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/etc/ih8sn.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/ih8sn.conf
+endif
+
 # START PREBUILT APK #
 
 # CameraGO
