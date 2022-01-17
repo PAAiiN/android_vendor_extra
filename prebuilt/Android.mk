@@ -82,7 +82,7 @@ LOCAL_PRODUCT_MODULE := true
 include $(BUILD_PREBUILT)
 
 # xyzDoodleLW
-# versionCode: 34 && versionName: 5.1.0
+# versionCode: 35 && versionName: 5.2.0
 include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := xyzDoodleLW
