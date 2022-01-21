@@ -4,6 +4,8 @@
 # Build system
 BUILD_BROKEN_DUP_RULES := true
 
+PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 # Charger
 ifeq ($(WITH_PIXEL_CHARGER),true)
 PRODUCT_COPY_FILES += \
