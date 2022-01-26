@@ -12,6 +12,14 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/charger,$(TARGET_COPY_OUT_PRODUCT)/etc/res)
 endif
 
+# Repainter integration
+ifeq ($(WITH_REPAINTER_INTEGRATION),true)
+PRODUCT_PACKAGES += \
+    RepainterServicePriv
+
+PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-custom
+endif
+
 # Safetynet Hax
 ifeq ($(WITH_SAFETYNET_HAX),true)
 PRODUCT_PACKAGES += \
