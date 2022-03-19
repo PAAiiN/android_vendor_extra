@@ -12,23 +12,6 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/charger,$(TARGET_COPY_OUT_PRODUCT)/etc/res)
 endif
 
-# Repainter integration
-ifeq ($(WITH_REPAINTER_INTEGRATION),true)
-PRODUCT_PACKAGES += \
-    RepainterServicePriv
-
-PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-custom
-endif
-
-# Safetynet Hax
-ifeq ($(WITH_SAFETYNET_HAX),true)
-PRODUCT_PACKAGES += \
-    ih8sn
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/etc/ih8sn.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/ih8sn.conf
-endif
-
 # START PREBUILT APK #
 
 # CameraGO
@@ -61,18 +44,6 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/etc/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
 
-# OneHandedMode
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.support_one_handed_mode=true
-
 # Privapp permissions whitelisting
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=log
-
-# SIM
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    persist.sys.fflag.override.settings_provider_model=false
-
-# System
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.binary_xml=false
