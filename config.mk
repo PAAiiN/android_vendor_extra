@@ -43,12 +43,6 @@ PRODUCT_PACKAGES += \
     CameraGOMod
 endif
 
-# GrapheneOSCamera
-ifeq ($(WITH_GOS),true)
-PRODUCT_PACKAGES += \
-    GrapheneOSCamera
-endif
-
 # OpenCamera
 ifeq ($(WITH_OPENCAMERA),true)
 PRODUCT_PACKAGES += \
@@ -59,20 +53,6 @@ endif
 ifeq ($(WITH_PMC),true)
 PRODUCT_PACKAGES += \
     PowerMenuControls
-endif
-
-ifeq ($(WITH_XRECORDER),true)
-PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
-# XRecorder
-PRODUCT_PACKAGES += \
-    XRecorder
-endif
-
-ifeq ($(WITH_DOODLE),true)
-PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
-# xyzDoodleLW
-PRODUCT_PACKAGES += \
-    xyzDoodleLW
 endif
 
 # END PREBUILT APK #
