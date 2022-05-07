@@ -57,9 +57,10 @@ endif
 
 # END PREBUILT APK #
 
-# Google Photos
+# Google Stuff
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/etc/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
+    $(LOCAL_PATH)/prebuilt/etc/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml \
+    $(LOCAL_PATH)/prebuilt/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml
 
 # OneHandedMode
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
